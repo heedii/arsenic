@@ -14,10 +14,24 @@ public class Sprint extends Module {
     }
     @ArsenicSubscribe
     public void onTick(EventTick eventTick) {
-        if (!isEnabled()) return;
-        if (mc.options.forwardKey.isPressed()) mc.player.setSprinting(true);
-        if (mc.options.leftKey.isPressed()) mc.player.setSprinting(true);
-        if (mc.options.rightKey.isPressed()) mc.player.setSprinting(true);
-        if (mc.options.backKey.isPressed()) mc.player.setSprinting(true);
+        if (!isEnabled()) 
+            return;
+        
+        if (mc.options.forwardKey.isPressed()) 
+        {
+            mc.player.setSprinting(true)
+        }
+        if (mc.options.leftKey.isPressed()) 
+        {
+            mc.player.setSprinting(true)
+        }
+        if (mc.options.rightKey.isPressed()) 
+        {
+            mc.player.setSprinting(true)
+        }
+        if (mc.options.backKey.isPressed()) 
+        {
+            mc.player.setSprinting(true)
+        }
     }
 }
