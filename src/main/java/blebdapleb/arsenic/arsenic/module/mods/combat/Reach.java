@@ -10,7 +10,7 @@ public class Reach extends Module {
 
     public Reach() {
         super("Reach", KEY_UNBOUND, ModuleCategory.COMBAT, "Allows you to reach further.",
-                new SettingNumber("Distance", 4.5, 6, 5, 0.1)
+                new SettingNumber("Distance", 3.1, 6, 5, 0.1)
         );
     }
 
