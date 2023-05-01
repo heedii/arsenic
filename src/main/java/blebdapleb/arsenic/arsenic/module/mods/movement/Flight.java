@@ -12,7 +12,7 @@ public class Flight extends Module {
     public Flight() {
         super("Flight", KEY_UNBOUND, ModuleCategory.MOVEMENT, "Allows you to fly.",
         new SettingMode("Mode", "Vanilla", "Vanilla", "Jetpack")
-        //new SettingBoolean("NoFall", false)
+        //new SettingBoolean("NoFall", false) WILL DO LATER
         );
     }
 
