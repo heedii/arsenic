@@ -18,8 +18,12 @@ public class Flight extends Module {
 
     @ArsenicSubscribe
     public void onTick(EventTick eventTick) {
-        if (!isEnabled()) return;
-
-        mc.player.getAbilities().allowFlying = true;
+        if (getSetting(0).asMode().getMode() == "Vanilla") {
+            if (!isEnabled()) return;
+            mc.player.getAbilities().allowFlying = true;
+        /*} else {
+            if (mc.options.jumpKey.isPressed() && !mc.options.sneakKey.isPressed())
+                mc.player.setVelocity(0, 0.42f, 0);*/
+        }
     }
 }
