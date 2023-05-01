@@ -6,6 +6,7 @@ import blebdapleb.arsenic.arsenic.module.mods.client.ClickGui;
 import blebdapleb.arsenic.arsenic.module.mods.combat.*;
 import blebdapleb.arsenic.arsenic.module.mods.client.Hud;
 import blebdapleb.arsenic.arsenic.module.mods.render.ESP;
+import blebdapleb.arsenic.arsenic.module.mods.render.Fullbright;
 import blebdapleb.arsenic.arsenic.module.mods.render.Tracers;
 import blebdapleb.arsenic.arsenic.util.collections.NameableStorage;
 import net.minecraft.client.MinecraftClient;
@@ -44,6 +45,7 @@ public class ModuleManager {
         // RENDER
         MODULES.add(new ESP());
         MODULES.add(new Tracers());
+        MODULES.add(new Fullbright());
 
         // MISC
         MODULES.add(new SelfDestruct());
