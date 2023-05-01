@@ -7,6 +7,7 @@ import blebdapleb.arsenic.arsenic.module.mods.combat.*;
 import blebdapleb.arsenic.arsenic.module.mods.client.Hud;
 import blebdapleb.arsenic.arsenic.module.mods.movement.JetPack;
 import blebdapleb.arsenic.arsenic.module.mods.movement.NoFall;
+import blebdapleb.arsenic.arsenic.module.mods.movement.Sprint;
 import blebdapleb.arsenic.arsenic.module.mods.render.ESP;
 import blebdapleb.arsenic.arsenic.module.mods.render.Tracers;
 import blebdapleb.arsenic.arsenic.util.collections.NameableStorage;
@@ -29,6 +30,7 @@ public class ModuleManager {
         MODULES.add(new Jesus());
         MODULES.add(new JetPack());
         MODULES.add(new NoFall());
+        MODULES.add(new Sprint());
 
         // COMBAT
         MODULES.add(new Hitbox());
