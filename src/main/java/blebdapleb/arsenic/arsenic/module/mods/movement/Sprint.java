@@ -19,19 +19,19 @@ public class Sprint extends Module {
         
         if (mc.options.forwardKey.isPressed()) 
         {
-            mc.player.setSprinting(true)
+            mc.player.setSprinting(true);
         }
         if (mc.options.leftKey.isPressed()) 
         {
-            mc.player.setSprinting(true)
+            mc.player.setSprinting(true);
         }
         if (mc.options.rightKey.isPressed()) 
         {
-            mc.player.setSprinting(true)
+            mc.player.setSprinting(true);
         }
         if (mc.options.backKey.isPressed()) 
         {
-            mc.player.setSprinting(true)
+            mc.player.setSprinting(true);
         }
     }
 }

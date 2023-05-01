@@ -7,11 +7,13 @@ import blebdapleb.arsenic.arsenic.eventbus.ArsenicSubscribe;
 import blebdapleb.arsenic.arsenic.module.Module;
 import blebdapleb.arsenic.arsenic.module.ModuleCategory;
 import blebdapleb.arsenic.arsenic.module.setting.settings.SettingBoolean;
+import blebdapleb.arsenic.arsenic.module.setting.settings.SettingMode;
 import blebdapleb.arsenic.arsenic.module.setting.settings.SettingNumber;
 
 public class Flight extends Module {
     public Flight() {
         super("Flight", KEY_UNBOUND, ModuleCategory.MOVEMENT, "Allows you to fly.");
+        new SettingMode("Mode", "Vanilla", "Vanilla", "Jetpack");
     }
 
     @ArsenicSubscribe
