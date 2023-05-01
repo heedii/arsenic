@@ -1,5 +1,6 @@
 package blebdapleb.arsenic.arsenic.module.mods.render;
 
+import blebdapleb.arsenic.arsenic.event.events.EventTick;
 import blebdapleb.arsenic.arsenic.eventbus.ArsenicSubscribe;
 import blebdapleb.arsenic.arsenic.module.Module;
 import blebdapleb.arsenic.arsenic.module.ModuleCategory;
@@ -11,7 +12,7 @@ public class Fullbright extends Module {
     }
 
     @ArsenicSubscribe
-    public void onTick() {
+    public void onTick(EventTick eventTick) {
         ((ISimpleOption<Double>)(Object)mc.options.getGamma()).setValueUnrestricted(100.0d);
     }
 }
