@@ -34,8 +34,8 @@ public class ESP extends Module {
 
     public ESP() {
         super("ESP", KEY_UNBOUND, ModuleCategory.RENDER, "Shows entities & blocks throw walls.",
-                new SettingMode("Render", "Shader", "Shader", "Box"),
-                new SettingNumber("ShaderFill", 1, 255, 50, 1),
+                new SettingMode("Render", "Box", /*"Shader",*/ "Box"),
+                //new SettingNumber("ShaderFill", 1, 255, 50, 1),
                 new SettingNumber("Box", 1, 5, 1, 1),
                 new SettingNumber("BoxFill", 0, 255, 50, 1)
         );
