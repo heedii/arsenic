@@ -11,6 +11,6 @@ public class Fullbright extends Module {
 
     @ArsenicSubscribe
     public void onEnable() {
-        
+
     }
 }
