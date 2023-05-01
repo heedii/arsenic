@@ -14,7 +14,7 @@ import net.minecraft.text.Text;
 
 public class Watermark {
 
-	private static String text = "Arsenic";
+	private static String text = "Arsenic-1.0";
 	private static int color = 0xb54ecc;
 
 	public static MutableText getText() {
