@@ -1,14 +1,10 @@
 package blebdapleb.arsenic.arsenic.module.mods.movement;
 
-import blebdapleb.arsenic.arsenic.event.EventTarget;
-import blebdapleb.arsenic.arsenic.event.EventUpdate;
 import blebdapleb.arsenic.arsenic.event.events.EventTick;
 import blebdapleb.arsenic.arsenic.eventbus.ArsenicSubscribe;
 import blebdapleb.arsenic.arsenic.module.Module;
 import blebdapleb.arsenic.arsenic.module.ModuleCategory;
-import blebdapleb.arsenic.arsenic.module.setting.settings.SettingBoolean;
 import blebdapleb.arsenic.arsenic.module.setting.settings.SettingMode;
-import blebdapleb.arsenic.arsenic.module.setting.settings.SettingNumber;
 
 public class Flight extends Module {
     public Flight() {
@@ -21,9 +17,9 @@ public class Flight extends Module {
         if (getSetting(0).asMode().getMode() == "Vanilla") {
             if (!isEnabled()) return;
             mc.player.getAbilities().allowFlying = true;
-        /*} else {
+        } else {
             if (mc.options.jumpKey.isPressed() && !mc.options.sneakKey.isPressed())
-                mc.player.setVelocity(0, 0.42f, 0);*/
+                mc.player.setVelocity(0, 0.42f, 0);
         }
     }
 }
