@@ -17,7 +17,7 @@ public class Hud {
 
     private static TextRenderer tr = mc.textRenderer;
 
-    static String arsenic = "[Arsenic V0.2]";
+    static String arsenic = "[Arsenic V0.5]";
 
     public static void render(MatrixStack matrices, float tickDelta)
     {
