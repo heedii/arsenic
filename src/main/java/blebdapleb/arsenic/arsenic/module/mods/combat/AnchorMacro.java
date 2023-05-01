@@ -20,13 +20,13 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import org.lwjgl.glfw.GLFW;
 
-public class AutoAnchor extends Module {
+public class AnchorMacro extends Module {
 
     private int timer = 0;
     private boolean hasAnchored;
 
-    public AutoAnchor() {
-        super("AutoAnchor", KEY_UNBOUND, ModuleCategory.COMBAT, "Automatically uses respawn anchors for you.",
+    public AnchorMacro() {
+        super("AnchorMacro", KEY_UNBOUND, ModuleCategory.COMBAT, "Automatically uses respawn anchors for you.",
                 new SettingBoolean("OnRightClick", true),
                 new SettingBoolean("ChargeOnly", false),
                 new SettingNumber("Cooldown", 0, 10, 4, 1)
@@ -118,7 +118,7 @@ public class AutoAnchor extends Module {
                     mc.player.swingHand(Hand.MAIN_HAND);
                 }
             } else if (isAnchorCharged(pos) && !getSetting(1).asBoolean().isEnabled()) {
-                PlayerInventory inv = AutoAnchor.mc.player.getInventory();
+                PlayerInventory inv = AnchorMacro.mc.player.getInventory();
                 InventoryUtils.selectItemFromHotbar(Items.RESPAWN_ANCHOR);
 
                 ActionResult result = mc.interactionManager.interactBlock(mc.player,  Hand.MAIN_HAND, hit);

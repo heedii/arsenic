@@ -34,8 +34,8 @@ public class ModuleManager {
         MODULES.add(new Hitbox());
         MODULES.add(new Aimbot());
         MODULES.add(new Reach());
-        MODULES.add(new AutoCrystal());
-        MODULES.add(new AutoAnchor());
+        MODULES.add(new LegitCrystal());
+        MODULES.add(new AnchorMacro());
         MODULES.add(new AutoTotem());
         MODULES.add(new Criticals());
         MODULES.add(new AutoPot());

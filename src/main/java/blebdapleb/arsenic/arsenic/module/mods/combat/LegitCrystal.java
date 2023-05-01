@@ -11,7 +11,6 @@ import blebdapleb.arsenic.arsenic.util.CrystalDataTracker;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.decoration.EndCrystalEntity;
 import net.minecraft.item.EndCrystalItem;
 import net.minecraft.item.ItemStack;
@@ -28,10 +27,10 @@ import org.lwjgl.glfw.GLFW;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class AutoCrystal extends Module {
+public class LegitCrystal extends Module {
 
-    public AutoCrystal() {
-        super("AutoCrystal", KEY_UNBOUND, ModuleCategory.COMBAT, "Automatically crystals for you.",
+    public LegitCrystal() {
+        super("LegitCrystal", KEY_UNBOUND, ModuleCategory.COMBAT, "Automatically crystals for you.",
                 new SettingBoolean("RandomizedInterval", true),
                 new SettingNumber("Interval", 0, 20, 0, 0.1),
                 new SettingBoolean("On Right Click", true)
