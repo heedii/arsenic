@@ -1,5 +1,6 @@
 package blebdapleb.arsenic.arsenic.module;
 
+import blebdapleb.arsenic.arsenic.module.mods.misc.AutoRespawn;
 import blebdapleb.arsenic.arsenic.module.mods.misc.SelfDestruct;
 import blebdapleb.arsenic.arsenic.module.mods.movement.*;
 import blebdapleb.arsenic.arsenic.module.mods.client.ClickGui;
@@ -49,6 +50,7 @@ public class ModuleManager {
 
         // MISC
         MODULES.add(new SelfDestruct());
+        MODULES.add(new AutoRespawn());
 
         // CLIENT
         MODULES.add(new ClickGui());
