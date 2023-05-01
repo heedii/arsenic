@@ -2,6 +2,8 @@ package blebdapleb.arsenic.arsenic.module.mods.movement;
 
 import blebdapleb.arsenic.arsenic.event.EventTarget;
 import blebdapleb.arsenic.arsenic.event.EventUpdate;
+import blebdapleb.arsenic.arsenic.event.events.EventTick;
+import blebdapleb.arsenic.arsenic.eventbus.ArsenicSubscribe;
 import blebdapleb.arsenic.arsenic.module.Module;
 import blebdapleb.arsenic.arsenic.module.ModuleCategory;
 

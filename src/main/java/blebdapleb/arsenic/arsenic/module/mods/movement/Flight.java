@@ -14,4 +14,10 @@ public class Flight extends Module {
     public void onUpdate(EventUpdate e) {
         mc.player.getAbilities().flying = true;
     }
+
+    @Override
+    public void onDisable() {
+        mc.player.getAbilities().flying = false;
+        super.onDisable();
+    }
 }
