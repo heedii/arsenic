@@ -12,8 +12,9 @@ public class Sprint extends Module {
     public Sprint() {
         super("Sprint", KEY_UNBOUND, ModuleCategory.MOVEMENT, "Allows you to sprint.");
     }
-    @EventTarget
-    public void onUpdate(EventUpdate e) {
+    @ArsenicSubscribe
+    public void onTick(EventTick eventTick) {
+        if (!isEnabled()) return;
         mc.player.setSprinting(true);
     }
 }

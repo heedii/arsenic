@@ -2,6 +2,7 @@ package blebdapleb.arsenic.arsenic.module.mods.movement;
 
 import blebdapleb.arsenic.arsenic.event.EventTarget;
 import blebdapleb.arsenic.arsenic.event.EventUpdate;
+import blebdapleb.arsenic.arsenic.event.events.EventTick;
 import blebdapleb.arsenic.arsenic.eventbus.ArsenicSubscribe;
 import blebdapleb.arsenic.arsenic.module.Module;
 import blebdapleb.arsenic.arsenic.module.ModuleCategory;
@@ -12,12 +13,9 @@ public class Flight extends Module {
     }
 
     @ArsenicSubscribe
-    public void onUpdate(EventUpdate e) {
-        mc.player.getAbilities().flying = true;
-    }
+    public void onTick(EventTick eventTick) {
+        if (!isEnabled()) return;
 
-    @ArsenicSubscribe
-    public void onDisable() {
-        mc.player.getAbilities().flying = false;
+        mc.player.getAbilities().allowFlying = true;
     }
 }
