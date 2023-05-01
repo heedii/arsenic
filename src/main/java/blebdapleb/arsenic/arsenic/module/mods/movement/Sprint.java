@@ -8,7 +8,4 @@ public class Sprint extends Module {
     public Sprint() {
         super("Sprint", KEY_UNBOUND, ModuleCategory.MOVEMENT, "Allows you to sprint.");
     }
-
-    @Override
-    public void onTick()
 }
