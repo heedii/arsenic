@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-    <b>Arsenic Client</b>
+    <h1>Arsenic Client</h1>
     <h2>Hey Devs</h2>
   </p>
 </div>
