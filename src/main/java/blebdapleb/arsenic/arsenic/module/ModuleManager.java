@@ -31,6 +31,7 @@ public class ModuleManager {
         MODULES.add(new NoFall());
         MODULES.add(new Sprint());
         MODULES.add(new Flight());
+        MODULES.add(new DoubleJump());
 
         // COMBAT
         MODULES.add(new Hitbox());
