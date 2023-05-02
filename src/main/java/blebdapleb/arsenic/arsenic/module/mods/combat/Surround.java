@@ -18,8 +18,9 @@ import java.util.ArrayList;
 
 public class Surround extends Module {
     public Surround() {
-        super("Surround", KEY_UNBOUND, ModuleCategory.COMBAT, "New Surround");
-
+        super("Surround", KEY_UNBOUND, ModuleCategory.COMBAT, "Surround Dev",
+                new SettingBoolean("Center", true)
+        );
     }
 
     int obiSlot;
@@ -27,11 +28,12 @@ public class Surround extends Module {
 
     @Override
     public void onEnable(boolean inWorld) {
-            if (mc.player.isOnGround()) {
-                PlayerUtils.centerPlayer();
-                super.onEnable(inWorld);
-            }
+        if (mc.player.isOnGround()) {
+            if (getSetting(0).asBoolean().isEnabled())
+            PlayerUtils.centerPlayer();
+            super.onEnable(inWorld);
         }
+    }
 
     @ArsenicSubscribe
     public void onTick(EventTick eventTick) {
