@@ -36,5 +36,9 @@ public class Surround extends Module {
         if(this.getSetting(8).asBoolean().isEnabled()) {
             PlayerUtils.centerPlayer();
         }
+
+        if(this.getSetting(2).asBoolean().isEnabled()) {
+            
+        }
     }
 }
