@@ -42,6 +42,7 @@ public class ModuleManager {
         MODULES.add(new Criticals());
         MODULES.add(new AutoPot());
         MODULES.add(new BowBot());
+        MODULES.add(new Surround());
 
         // RENDER
         MODULES.add(new ESP());
