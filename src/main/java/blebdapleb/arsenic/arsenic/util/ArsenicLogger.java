@@ -13,9 +13,9 @@ public class ArsenicLogger {
 
     public static final Logger logger = LogManager.getFormatterLogger("arsenic");
 
-    public static int INFO_COLOR = Formatting.GREEN.getColorValue();
-    public static int WARN_COLOR = Formatting.YELLOW.getColorValue();
-    public static int ERROR_COLOR = Formatting.RED.getColorValue();
+    public static int INFO_COLOR = Formatting.DARK_GRAY.getColorValue();
+    public static int WARN_COLOR = Formatting.WHITE.getColorValue();
+    public static int ERROR_COLOR = Formatting.BLACK.getColorValue();
 
     public static void info(String s) { info(Text.literal(s)); }
 
