@@ -7,6 +7,7 @@ import blebdapleb.arsenic.arsenic.module.setting.settings.SettingBoolean;
 public class Surround extends Module {
     public Surround() {
         super("Surround", KEY_UNBOUND, ModuleCategory.COMBAT, "hvh momento",
+        new SettingBoolean("Rotations", true),
         new SettingBoolean("NoAirPlace", false),
         new SettingBoolean("Double", false),
         new SettingBoolean("SelfTrap", false),
@@ -16,8 +17,7 @@ public class Surround extends Module {
         new SettingBoolean("OnlyGround", true),
         new SettingBoolean("Center", true),
         new SettingBoolean("DisableOnJump", true),
-        new SettingBoolean("DisableOnYChange", true),
-        new SettingBoolean("Rotations", true)
+        new SettingBoolean("DisableOnYChange", true)
         );
     }
 }
