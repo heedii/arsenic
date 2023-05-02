@@ -1,8 +1,11 @@
 package blebdapleb.arsenic.arsenic.module.mods.combat;
 
+import blebdapleb.arsenic.arsenic.event.events.EventTick;
+import blebdapleb.arsenic.arsenic.eventbus.ArsenicSubscribe;
 import blebdapleb.arsenic.arsenic.module.Module;
 import blebdapleb.arsenic.arsenic.module.ModuleCategory;
 import blebdapleb.arsenic.arsenic.module.setting.settings.SettingBoolean;
+import blebdapleb.arsenic.arsenic.util.player.PlayerUtils;
 
 public class Surround extends Module {
     public Surround() {
@@ -19,5 +22,19 @@ public class Surround extends Module {
         new SettingBoolean("DisableOnJump", true),
         new SettingBoolean("DisableOnYChange", true)
         );
+    }
+    @ArsenicSubscribe
+    private void onTick(EventTick eventTick) {
+        if(this.getSetting(9).asBoolean().isEnabled()) {
+            mc.options.jumpKey.isPressed();
+            toggle();
+        }
+    }
+
+    @Override
+    public void onEnable(boolean inWorld) {
+        if(this.getSetting(8).asBoolean().isEnabled()) {
+            PlayerUtils.centerPlayer();
+        }
     }
 }

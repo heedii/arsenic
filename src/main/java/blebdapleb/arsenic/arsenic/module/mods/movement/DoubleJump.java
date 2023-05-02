@@ -1,4 +1,4 @@
-package blebdapleb.arsenic.arsenic.module.mods.movement;
+/*package blebdapleb.arsenic.arsenic.module.mods.movement;
 
 import blebdapleb.arsenic.arsenic.event.events.EventTick;
 import blebdapleb.arsenic.arsenic.eventbus.ArsenicSubscribe;
@@ -29,4 +29,4 @@ public class DoubleJump extends Module {
         }
     }
 
-}
+}*/
