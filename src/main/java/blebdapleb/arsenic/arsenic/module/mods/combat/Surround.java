@@ -27,11 +27,11 @@ public class Surround extends Module {
 
     @Override
     public void onEnable(boolean inWorld) {
-        if (mc.player.isOnGround()) {
-            PlayerUtils.centerPlayer();
-            super.onEnable(inWorld);
+            if (mc.player.isOnGround()) {
+                PlayerUtils.centerPlayer();
+                super.onEnable(inWorld);
+            }
         }
-    }
 
     @ArsenicSubscribe
     public void onTick(EventTick eventTick) {
