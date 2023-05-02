@@ -19,10 +19,7 @@ import java.util.ArrayList;
 public class Surround extends Module {
     public Surround() {
         super("Surround", KEY_UNBOUND, ModuleCategory.COMBAT, "New Surround");
-        new SettingMode("Mode", "Obsidian", "Obsidian", "Bedrock", "NetheriteBlock");
-        new SettingBoolean("Players", true
-        );
-        // Ill make Mode Later
+
     }
 
     int obiSlot;
